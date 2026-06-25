@@ -12,24 +12,22 @@
   </header>
 
   <main>
+    <!-- Uçuş arama formu -->
     <form id="flightForm">
-      <label>Nereden:</label>
-      <input type="text" id="from" placeholder="İstanbul (IST)">
-      
-      <label>Nereye:</label>
-      <input type="text" id="to" placeholder="Paris (CDG)">
-      
-      <label>Tarih:</label>
-      <input type="date" id="date">
-      
+      <label for="from">Nereden:</label>
+      <input type="text" id="from" placeholder="İstanbul" required>
+
+      <label for="to">Nereye:</label>
+      <input type="text" id="to" placeholder="Ankara" required>
+
       <button type="submit">Uçuş Ara</button>
     </form>
 
-    <section id="results">
-      <!-- Arama sonuçları burada görünecek -->
-    </section>
+    <!-- Sonuçların görüneceği bölüm -->
+    <section id="results"></section>
   </main>
 
+  <!-- JavaScript dosyası -->
   <script src="script.js"></script>
 </body>
 </html>
