@@ -1,11 +1,25 @@
-<form id="flightForm">
-  <label for="from">Nereden:</label>
-  <input type="text" id="from" placeholder="İstanbul" required>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Uçuş Arama</title>
+</head>
+<body>
+  <h1>Uçuş Arama</h1>
+  <form id="flightForm">
+    <label for="from">Nereden:</label>
+    <input type="text" id="from" placeholder="IST" required>
 
-  <label for="to">Nereye:</label>
-  <input type="text" id="to" placeholder="Ankara" required>
+    <label for="to">Nereye:</label>
+    <input type="text" id="to" placeholder="ESB" required>
 
-  <button type="submit">Uçuş Ara</button>
-</form>
+    <label for="date">Tarih:</label>
+    <input type="date" id="date" required>
 
-<section id="results"></section>
+    <button type="submit">Ara</button>
+  </form>
+
+  <section id="results"></section>
+
+  <script src="script.js"></script>
+</body>
