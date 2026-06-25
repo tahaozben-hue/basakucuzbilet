@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <title>Basak Ucuz Bilet</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Basak Ucuz Bilet</h1>
-    <p>Türkiye ve Avrupa uçuşlarını takip et!</p>
-  </header>
+<form id="flightForm">
+  <label for="from">Nereden:</label>
+  <input type="text" id="from" placeholder="İstanbul" required>
 
-  <main>
-    <!-- Uçuş arama formu -->
-    <form id="flightForm">
-      <label for="from">Nereden:</label>
-      <input type="text" id="from" placeholder="İstanbul" required>
+  <label for="to">Nereye:</label>
+  <input type="text" id="to" placeholder="Ankara" required>
 
-      <label for="to">Nereye:</label>
-      <input type="text" id="to" placeholder="Ankara" required>
+  <button type="submit">Uçuş Ara</button>
+</form>
 
-      <button type="submit">Uçuş Ara</button>
-    </form>
-
-    <!-- Sonuçların görüneceği bölüm -->
-    <section id="results"></section>
-  </main>
-
-  <!-- JavaScript dosyası -->
-  <script src="script.js"></script>
-</body>
-</html>
+<section id="results"></section>
